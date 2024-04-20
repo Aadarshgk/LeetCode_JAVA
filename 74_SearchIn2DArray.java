@@ -1,6 +1,6 @@
 class Solution {
     public boolean searchMatrix(int[][] matrix, int target) {
-        int i=0,low,high,mid,row=matrix.length-1,col=matrix[i].length-1;
+        int i=0,low,high,mid,row=matrix.length-1,col=matrix[0].length-1;
         while(i<=row){
             if(target>=matrix[i][0] && target<=matrix[i][col]){
                 low=0;
