@@ -13,7 +13,7 @@ class Solution {
     }
     public int[][] largestLocal(int[][] grid) {
         int n=grid.length;;
-        int i=0,j,count=0;
+        int i=0,j;
         int[][] res= new int[n-2][n-2]; 
         while(i<n-2){
             j=0;
