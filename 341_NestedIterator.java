@@ -1,6 +1,3 @@
-public class 341_NestedIterator {
-    
-}
 /**
  * // This is the interface that allows for creating nested lists.
  * // You should not implement it, or speculate about its implementation
@@ -19,10 +16,9 @@ public class 341_NestedIterator {
  * }
  */
 public class NestedIterator implements Iterator<Integer> {
-    List<Integer> res=null;
-    int count=0;
+    Queue<Integer> res=null;
     public NestedIterator(List<NestedInteger> nestedList) {
-        res=new ArrayList<>();
+        res=new LinkedList<>();
         for(NestedInteger integer: nestedList){
             flattenList(integer);
         }
@@ -30,12 +26,12 @@ public class NestedIterator implements Iterator<Integer> {
 
     @Override
     public Integer next() {
-        return  res.get(count++);
+        return  res.remove();
     }
 
     @Override
     public boolean hasNext() {
-        return count<res.size();
+        return !res.isEmpty();
     }
 
     public void flattenList(NestedInteger list){
