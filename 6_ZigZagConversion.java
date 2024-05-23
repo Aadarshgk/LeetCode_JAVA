@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+
 class Solution {
     public String convert(String s, int numRows) {
         ArrayList<StringBuilder> ls=new ArrayList<>();
