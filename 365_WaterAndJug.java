@@ -8,5 +8,6 @@ class Solution {
 
         if(target%t==0) return true;
         return false; 
+        
     }
 }
