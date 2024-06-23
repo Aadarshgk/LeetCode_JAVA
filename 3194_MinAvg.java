@@ -1,3 +1,4 @@
+import java.util.Arrays;
 class Solution {
     public double minimumAverage(int[] nums) {
         double min=Double.MAX_VALUE;
