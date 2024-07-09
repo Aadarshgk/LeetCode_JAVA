@@ -1,7 +1,6 @@
 class Solution {
     public int removeElement(int[] nums, int val) {
         int len= nums.length,i=0;
-        int k=len;
         while(i<len){
             if(nums[i]==val){
                 replace(nums,i,len);
