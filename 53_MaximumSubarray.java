@@ -1,3 +1,5 @@
+//Kadane's algorithm
+
 class Solution {
     public int maxSubArray(int[] nums) {
         int temp= 0;
