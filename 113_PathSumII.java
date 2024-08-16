@@ -12,16 +12,13 @@ class Solution {
     public void pathSum(TreeNode root, int targetSum, List<Integer> list){
         if(root==null) return;
         list.add(root.val);
-        targetSum-=root.val;
-        if(root.left==null && root.right==null) {
-            if(targetSum==0){
-                res.add(new ArrayList<>(list));
-            }
-            return;
+        if(root.left==null && root.right==null && root.val==targetSum) {
+            res.add(new ArrayList<>(list));
         }else{
-            pathSum(root.left,targetSum,new ArrayList<>(list));
-            pathSum(root.right,targetSum,new ArrayList<>(list));
+            pathSum(root.left,targetSum-root.val,list);
+            pathSum(root.right,targetSum-root.val,list);
         } 
+        list.remove(list.size()-1);
         
     }
 }
