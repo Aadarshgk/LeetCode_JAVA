@@ -19,3 +19,24 @@ class Solution {
         return res;       
     }
 }
+
+//Initial soln - Time limit exceeded 
+// class Solution {
+//     public boolean[] isArraySpecial(int[] nums, int[][] queries) {
+//         int len= queries.length;
+//         boolean[] res= new boolean[len];
+//         Arrays.fill(res,true);
+//         int k=-1;
+
+//         for(int[] ar: queries){
+//             ++k;
+//             for(int i=ar[0];i<ar[1];i++){
+//                 if((nums[i] - nums[i+1])%2==0){
+//                     res[k]=false;
+//                     break;
+//                 }
+//             }
+//         }
+//         return res;
+//     }
+// }
