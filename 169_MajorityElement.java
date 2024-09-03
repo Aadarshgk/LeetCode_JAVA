@@ -1,4 +1,4 @@
-//most efficient soln- Boyer Moore's voting algorithm - O(n)
+//most efficient soln- Boyer Moore's voting algorithm -  O(n) 
 class Solution {
     public int majorityElement(int[] nums) {
         int count=0,el1=0,len=nums.length;
