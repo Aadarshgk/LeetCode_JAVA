@@ -2,7 +2,7 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
-
+//Initial brute force solution
 class Solution {
     public int[][] merge(int[][] intervals) {
         Arrays.sort(intervals,Comparator.comparingInt(a-> a[0]));  
