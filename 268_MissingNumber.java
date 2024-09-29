@@ -9,3 +9,14 @@ class Solution {
         return Math.abs(val-sum);
     }
 }
+
+//XOR soln
+// class Solution{
+//     public int missingNumber(int[] nums){
+//         int res=nums.length;
+//         for(int a: nums){
+//             res= (res^a);
+//         }
+//         return res;
+//     }
+// }
