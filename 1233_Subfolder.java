@@ -1,3 +1,7 @@
+import java.util.HashMap;
+import java.util.List;
+import java.util.ArrayList;
+
 class Solution {
     class Trie {
         boolean end;
@@ -9,7 +13,8 @@ class Solution {
         }
     }
 
-    List<String> res= new ArrayList<>();
+    List<String> res = new ArrayList<>();
+
     public List<String> removeSubfolders(String[] folder) {
         Trie root = new Trie();
 
@@ -31,7 +36,7 @@ class Solution {
             cur.end = true;
         }
 
-        getString(root,"");
+        getString(root, "");
         return res;
     }
 
