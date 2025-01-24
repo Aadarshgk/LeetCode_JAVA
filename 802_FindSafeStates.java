@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.List;
+import java.util.ArrayList;
 class Solution {
     public List<Integer> eventualSafeNodes(int[][] graph) {
         int len=graph.length;
