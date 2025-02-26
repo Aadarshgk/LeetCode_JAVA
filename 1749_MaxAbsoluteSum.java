@@ -29,3 +29,21 @@ class Solution {
         return Math.max(max,Math.abs(min));
     }
 }
+
+//Alternative min-max soln
+// class Solution {
+//     public int maxAbsoluteSum(int[] nums) {
+//         int sum=0,max=0,min=0;
+//         for(int n: nums){
+//             sum+=n;
+//             if(sum<min){
+//                 min=sum;
+//             }
+//             if(sum>max){
+//                 max=sum;
+//             }
+//         }
+
+//         return Math.abs(max)+Math.abs(min);
+//     }
+// }
