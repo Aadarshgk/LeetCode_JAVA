@@ -1,5 +1,6 @@
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Arrays;
 class Solution {
     public int countDays(int days, int[][] meetings) {
         Arrays.sort(meetings,(a,b)->a[0]-b[0]);
