@@ -1,6 +1,6 @@
 import java.util.List;
 import java.util.ArrayList;
-import java.util.COllections;
+import java.util.Collections;
 class Solution {
     public int minOperations(int[][] grid, int x) {
         List<Integer> list=new ArrayList<>();
