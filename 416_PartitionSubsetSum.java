@@ -29,6 +29,7 @@
 // }
 
 //DP SPACE OPTIMIZATION
+import java.util.Arrays;
 class Solution {
     public boolean canPartition(int[] nums) {
         int sum=0;
