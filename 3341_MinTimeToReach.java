@@ -8,7 +8,6 @@ class Solution {
         for(int i=0;i<row;i++){
             Arrays.fill(dist[i],Integer.MAX_VALUE);
         }
-        int time=0;
         int[] dir={1,0,-1,0,1};
         PriorityQueue<int[]> pq=new PriorityQueue<>((a,b)->a[2]-b[2]);
         pq.add(new int[]{0,0,0});
